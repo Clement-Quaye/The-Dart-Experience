@@ -8,6 +8,9 @@ class HeaderBar extends StatefulWidget {
   State<HeaderBar> createState() => _HeaderBar();
 }
 
+_HeaderBar() {
+}
+
 class _HeaderBarState extends State<HeaderBar> {
   @override
   Widget build(BuildContext context) {
