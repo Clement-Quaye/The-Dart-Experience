@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:mytodo/views/task_page.dart';
+import 'package:provider/provider.dart';
+
+import 'view_models/app_view_model.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(create: (context) => AppViewModel(),child: const MyApp())); //ChangeNotifierProvider
 }
 
 class MyApp extends StatelessWidget {
