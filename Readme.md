@@ -10,3 +10,6 @@ This repo is digital journal of my experience studying Dart for a better Flutter
 It is categorized into two (2):
 - Tutorials: Where I complete exercises and challenges.
 - Projects: Personal projects I will be attempting.
+    - Project 1:    Todo Application
+    - Project 2:    NSS App
+    - Project 3:
