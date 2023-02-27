@@ -1,5 +1,5 @@
 <h1 align="center">
-    Ë DART XPERIENCE
+    É DART XPERIENCE
 </h1>
 <p>
 I got infected by the flutter hype too :D! BUT, As I  walked through building projects with professional developers online; I realized I could be better if I did due diligence and picked up some knowledge in the Programming language behind the new wave.
