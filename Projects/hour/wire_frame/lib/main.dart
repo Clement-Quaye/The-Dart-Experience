@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wire_frame/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,14 +27,30 @@ class RootPage extends StatefulWidget {
 
 //App Bar
 class _RootPageState extends State<RootPage> {
+  int currentPage = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flutter'),
       ),
+      body: const HomePage(),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+          onPressed: () {
+            debugPrint('Floating Action Button');
+          },
+          child: const Icon(Icons.add)),
+      bottomNavigationBar: NavigationBar(
+        destinations: const [
+          NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
+          NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
+        ],
+        onDestinationSelected: (int index) {
+          setState(() {
+            currentPage = index;
+          });
+        },
+        selectedIndex: currentPage,
       ),
     );
   }
